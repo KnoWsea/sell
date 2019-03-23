@@ -1,0 +1,28 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/sell?characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
+  jpa:
+    show-sql: true
+  redis:
+    host: localhost
+    port: 6379
+server:
+  servlet:
+    context-path: /sell
+  port: 8080
+wechat:
+  mpAppId: wx7a1be4cd1f497393
+  mpAppSecret: ce83e8053b9561a7f8818ddfedb8a988
+  mchId: 1522056971
+  mchKey: TD2bkIwy8KS7iVWPyckX8pElbdPxpn6y
+  keyPath: C:\Users\KnoWsea\Download\cert\apiclient_cert.p12
+  notifyUrl: http://knowsea.nat100.top/sell/pay/notify
+  templateId:
+    orderStatus: qwmgj0dIb-cccbrcRjFI2NAWwsv3nmWZgVvHtpbhoG8
+projecturl:
+  wechatMpAuthorize: http://knowsea.nat100.top
+  wechatOpenAuthorize: http://knowsea.nat100.top
+  sell: http://knowsea.nat100.top
